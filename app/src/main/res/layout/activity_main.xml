@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <!--    back && author name-->
+    <View
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:id="@+id/authorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:text="2050531200145_Hồ Lê Minh Hoàng"
+        android:fontFamily="@font/shipporimincho_bold"
+        android:textSize="12dp"
+        android:textColor="@color/green"
+        android:gravity="top"
+        />
+
+    <!--    title-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:fontFamily="@font/shipporimincho_extrabold"
+        android:text="Welcome back!" />
+
+    <!--    USER NAME-->
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="328dp"
+        android:layout_height="49dp"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/shipporimincho_regular"
+        android:hint="Enter your username"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:background="@drawable/edit_text_border"/>
+
+    <TextView
+        android:id="@+id/username_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="140dp"
+        android:fontFamily="@font/shipporimincho_bold"
+        android:gravity="bottom"
+        android:text="User Name"
+        android:textColor="@color/green"
+        android:textSize="12dp"
+        android:layout_marginStart="60dp"
+        android:background="@color/white"/>
+
+    <!--   PASSWORD-->
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="328dp"
+        android:layout_height="49dp"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/shipporimincho_regular"
+        android:hint="Enter your password"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:textColor="@color/black"
+        android:background="@drawable/edit_text_border"/>
+
+    <TextView
+        android:id="@+id/password_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="210dp"
+        android:fontFamily="@font/shipporimincho_bold"
+        android:gravity="bottom"
+        android:text="Password"
+        android:textColor="@color/green"
+        android:textSize="12dp"
+        android:layout_marginStart="60dp"
+        android:background="@color/white"/>
+
+    <!--    Remember account-->
+    <CheckBox
+        android:id="@+id/rememberAccount_checkBox"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="290dp"
+        android:background="@drawable/check_box_border"
+        android:contentDescription="Remember Me Checkbox" />
+
+    <TextView
+        android:id="@+id/rememberAccount_tittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/shipporimincho_regular"
+        android:gravity="bottom"
+        android:text="Remember Me"
+        android:textColor="@color/green"
+        android:textSize="12dp"/>
+
+    <!--    forgot password-->
+
+    <!--    login button-->
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="287dp"
+        android:contentDescription="Forgot Password"
+        android:fontFamily="@font/shipporimincho_extrabold"
+        android:gravity="bottom"
+        android:text="Forgot password?"
+        android:textColor="@color/green"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="328dp"
+        android:layout_height="54dp"
+        android:text="Login"
+        android:layout_marginTop="325dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/shipporimincho_bold"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:background="@drawable/login_button"
+        android:gravity="center"/>
+
+    <!--    login with-->
+    <View
+        android:id="@+id/login_with"
+        android:layout_width="328dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="406dp"
+
+    />
+    <View
+        android:id="@+id/login_with_line"
+        android:layout_width="328dp"
+        android:layout_height="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="419dp"
+        android:background="@drawable/login_with_line" />
+
+    <TextView
+        android:id="@+id/login_with_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="412dp"
+        android:background="@color/white"
+        android:fontFamily="@font/shipporimincho_regular"
+        android:gravity="center"
+        android:textSize="10dp"
+        android:text="Login With"
+        android:textColor="@color/green"
+        />
+
+    <View
+        android:id="@+id/facebook_ico"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="81dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/facebook_ico" />
+
+    <View
+        android:id="@+id/apple_ico"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/apple_ico"
+        />
+
+    <View
+        android:id="@+id/google_ico"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="277dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="456dp"
+        android:background="@drawable/google_ico"
+        />
+
+    <TextView
+        android:id="@+id/don_t_have_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="536dp"
+        android:text="Don’t have an account?"
+        android:fontFamily="@font/shipporimincho_regular"
+        android:textSize="12dp"
+        android:gravity="top"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="230dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="534dp"
+        android:text="Sign up"
+        android:fontFamily="@font/shipporimincho_bold"
+        android:textSize="15dp"
+        android:textColor="@color/green"
+        android:gravity="top"
+        />
+</RelativeLayout>
+
